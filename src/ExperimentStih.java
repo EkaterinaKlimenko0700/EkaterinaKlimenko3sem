@@ -14,16 +14,32 @@ public class ExperimentStih {
                  "В наших глазах звездная ночь",
                  "В наших глазах потерянный рай",
                  "В наших глазах закрытая дверь",
-                 "Что тебе нужно? Выбирай"};
+                 "Что тебе нужно?",
+                 "Выбирай"};
+
+        String[] stih3 = {
+                "Уж сколько их упало в эту бездну,",
+                "Разверстую вдали!",
+                "Настанет день, когда и я исчезну",
+                "С поверхности земли.",
+                "Застынет все, что пело и боролось,",
+                "Сияло и рвалось:",
+                "И зелень глаз моих, и нежный голос,",
+                "И золото волос."};
 
 
-        Stih Sonet = new Stih(stih1);
-        Stih Tsoy = new Stih(stih2);
 
-        System.out.println("Ищем рифмы в Сонете:");
+        Stih Sonet = new Stih (stih1);
+        Stih Tsoy = new Stih (stih2);
+        Stih Tsvetaeva = new Stih (stih3);
+
+
+        System.out.println("Ищем рифмы в Сонете:" + "\n");
         Sonet.Poisk3();
-        System.out.println("Ищем рифмы в песне:");
+        System.out.println("Ищем рифмы в песне:" + "\n");
         Tsoy.Poisk2();
+        System.out.println("Ищем рифмы, предварительно удалив пунктуацию в Монологе:" + "\n");
+        Tsvetaeva.Poisk2();
 
 
     }

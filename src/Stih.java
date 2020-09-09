@@ -1,4 +1,4 @@
-public class Stih {
+public class Stih<stih> {
     String[] stihi;//поле с массивом
     int length;
 
@@ -7,7 +7,17 @@ public class Stih {
         this.length = mass.length;
     }
 
+    private void Punkt(){//пунктуация
+        for (int i = 0; i < length; i++) {
+            stihi[i] = stihi[i].replaceAll("[^a-zA-Zа-яА-Я\\s]","");
+            System.out.println(stihi[i]);
+            }
+        System.out.println("\n");
+    }
+
     public void Poisk3() {//поиск по трём последним буквам
+
+            Punkt();
             for (int i = 0; i < length; i++) {
                 for (int j = 0; j < length && j!=i ; j++) {
                     String a, b;
@@ -25,6 +35,8 @@ public class Stih {
         }
 
     public void Poisk2() {  //поиск по двум последним буквам
+
+        Punkt();
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length && i != j; j++) {
                 String a, b;//оставляем
@@ -41,6 +53,5 @@ public class Stih {
             }
         }
     }
-
 }
 
