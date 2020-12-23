@@ -8,18 +8,6 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public static void main(String[] args) throws FileNotFoundException {
-
-
-        System.out.println("--------Задача 4--------");
-
-                FileReader2 counter = new FileReader2(new HashMap<>());
-        counter.readFile("propaganda.txt");
-        for (var item : counter.getSorted()) {
-        System.out.println(item.getKey() + " " + item.getValue());
-        }
-
-        }
 
 public class FileReader2 {
 
