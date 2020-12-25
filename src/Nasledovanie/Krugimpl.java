@@ -12,18 +12,18 @@ public class Krugimpl implements Circle {
 
     public double area() {
 
-        return Math.PI * Math.pow(radius,2);
+        return Math.PI * Math.pow(radius,2);//площадь круга
     }
 
 
     public double perimiter() {
 
-        return 0;
+        return 2*Math.PI*radius;//периметр круга
     }
 
 
     public String info() {
 
-        return null;
+        return "Круг с радиусом " + radius;
     }
 }
