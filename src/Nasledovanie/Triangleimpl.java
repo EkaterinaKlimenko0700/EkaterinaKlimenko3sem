@@ -11,21 +11,21 @@ package Nasledovanie;
             this.c = c;
         }
 
-        public double area() {
-            double p =perimiter()/2;
-            return Math.sqrt(p * (p -a) *(p-b) * (p-c));
-        }
-
-
-        public double perimiter() {
+       public double perimiter() {
 
             return a + b + c;
         }
 
+        public double area() {
+            double p = perimiter() / 2;
+            return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        }
+
+
 
         public String info() {
 
-            return null;
+            return "Треугольник со сторонами " + a + ", " + b + " и " + c;
         }
 
 
